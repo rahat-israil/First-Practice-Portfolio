@@ -1,0 +1,276 @@
+* {                                 /*universal Selector*/
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+.Portfolio-container {
+ min-height: 100vh;
+ width: 100%;
+ display: flex;
+}
+
+.navlist {
+ display: flex;
+ gap: 50px;                       
+ /* background-color: aqua; */
+ height: 70px;
+ width: 100%;
+ justify-content: center;            /*Horizontally Center */
+ align-items: center;                /*Item Center */
+ position: fixed;            /* Ata Use korle navlist merge hobe Left & Right Container er sathe */
+ /* Navlist Upore e rakhar jonno ai 3 ta command */
+ top: 0;                            /* Fixes navlist at the top */
+ background-color: #262525;      /* Background color to distinguish it from content */
+ z-index: 1000;                   /* Ensures it stays above other elements */
+}
+
+.navlist li {
+ list-style: none;
+}
+
+.navlist li a {
+ text-decoration: none;
+ text-transform: uppercase;
+ color: white;
+}
+
+.Left-container,.Right-container {
+ height: 100vh;
+ display: flex;
+ align-items: center;
+}
+
+.Left-container {
+ background-color: #262525;
+ width: 70%;
+ padding-left: 40px;
+}
+
+.Right-container {
+ background: linear-gradient(-45deg, forestgreen, #262525 70%);
+ width: 30%;
+}
+
+.icon,.fa-brands {
+ color: rgb(149, 113, 113);
+ font-size: 40px;
+}
+
+.icon {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.content {
+ margin-left: 50px;
+}
+
+.content .intro {
+ font-size: 30px;
+ color: white;
+}
+
+.content .intro span {
+ color: limegreen;
+}
+
+.content h1 {
+ font-size: 60px;
+ color: limegreen;
+}
+
+.content .details {
+ font-size: 20px;
+ color: white;
+ width: 550px;
+ text-align: justify;
+ margin-top: 20px;
+ margin-bottom: 40px;
+}
+
+.button-container button {
+ font-size: 20px;
+ border: 2px solid limegreen;
+ padding: 10px 20px;
+ border-radius: 7px;
+ cursor: pointer;          /* Box ar opor gele curson change hoye jabe */
+ transition: .10s ease;     /* Transition Effect */
+}
+
+button:nth-child(1) {           /* ntn means koto no child */
+ background-color: limegreen;
+ color: #262525;
+}
+
+button:nth-child(2) {
+ background: transparent;
+ color: limegreen;
+ margin-left: 30px;
+}
+
+button:nth-child(1):hover {
+ background-color: transparent;
+ color: limegreen;
+}
+
+button:nth-child(2):hover {
+ background-color: limegreen;
+ color: #262525;
+}
+.icon .fa-brands:hover{            /* Hober effect in Icon */
+ cursor: pointer;
+ background: limegreen;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.design .circle{
+ aspect-ratio: 1;
+ position: absolute;
+ border-radius: 50%;
+ top: 50%;
+ left: 70%;
+ transform: translate(-50%, -50%);
+
+}
+
+.circle:nth-child(1){
+ /* background: linear-gradient(red 50%, #262525 50%); */
+ /* background: linear-gradient(90deg, red 50%, #262525 50%); */
+ background: linear-gradient(90deg, transparent 50%, #262525 50%);
+ width: 500px;
+}
+.circle:nth-child(2){
+ /* background-color: whitesmoke; */
+ width: 400px;
+ background-image: url(./Image/Rahat_Prof-removebg.png);
+ background-size: 100%;
+ background-repeat: no-repeat;
+ border: 2px solid white;
+
+ box-shadow: 
+ 0 0 30px whitesmoke,              /* Border Outside */
+ inset 0 0 20px whitesmoke,       /* Border Inside */
+ 0 0 20px limegreen,
+ inset 0 0 20px limegreen,
+ 0 0 40px limegreen,
+ inset 0 0 40px limegreen;
+}
+
+.navlist li a:hover{
+ color: limegreen;
+ border: 2px solid limegreen;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;                   /* Box ar opor gele curson change hoye jabe */
+  transition: .10s ease;
+ box-shadow: 0 0 40px limegreen;
+}
+
+.myservice{
+ text-align: center;
+ margin: 40px 0 30px 0;
+}
+.myservice h1{
+ font-size: 40px;
+}
+
+.Service{
+ display: flex;
+ 
+}
+.webdesign, .Development, .code{
+ border: 3px solid darkblue;
+ height: 200px;
+ width: 400px;
+ margin-left: 50px;
+ overflow: scroll;       /* Lekha besi hole box theke ber hoye jay tolhon ai property use kora hoy */
+ border-radius: 10px;
+ box-shadow: 10px 10px 8px 3px limegreen;
+}
+
+.webdesign h3{
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+.webdesign p{
+text-align: center;
+text-align: justify;
+padding: 30px;
+}
+
+.Development h3{
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+.Development p{
+text-align: center;
+text-align: justify;
+padding: 30px;
+}
+
+.code h3{
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+.code p{
+text-align: center;
+text-align: justify;
+padding: 30px;
+}
+
+.service2{
+ display: flex;
+ margin-top: 40px;
+ margin-bottom: 100px;
+}
+
+.GD, .Pre, .Support{
+ border: 3px solid darkblue;
+  height: 200px;
+  width: 400px;
+  margin-left: 50px;
+  border-radius: 5px 30px;
+  box-shadow: 10px 10px 8px 3px limegreen;
+  bo
+}
+.GD h3 {
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+
+.GD p {
+ text-align: center;
+ text-align: justify;
+ padding: 30px;
+}
+.Pre h3 {
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+
+.Pre p {
+ text-align: center;
+ text-align: justify;
+ padding: 30px;
+}
+.Support h3 {
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0 0 0;
+}
+
+.Support p {
+ text-align: center;
+ text-align: justify;
+ padding: 30px;
+}
